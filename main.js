@@ -5,7 +5,7 @@ function render(d) {
     let sanoq = 0
     d.map((i) => {
         let card = `
-            <div class="col-3" >
+            <div class="col-6 col-md-4  col-lg-3" >
                <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="100%" height="45%" class="" src="${i.src}" ></iframe>
                 <div><p>${i.title}</p></div>
                 <button class="btn btn_dalete" onclick="deleteFun(${sanoq})" style="float:left;color: rgb(143, 26, 26);s" >Delete</button>
