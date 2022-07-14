@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yutub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+
+<body>
+    <!--section mobilni nav start-->
+    <nav class="nav">
+        <input class="nav__trigger-input" type="checkbox" id="trigger" aria-label="open the navigation" />
+        <label class="nav__trigger-finger" for="trigger">
+            <span></span>
+        </label>
+        <ul class="nav__list">
+            <div class="row">
+                <div class="col-12">
+                    <label for="url" class="mt-2" style="font-size:14px ;"><b>Video urlini kiriting</b></label>
+                </div>
+                <div class="col-12">
+                    <input class="form-control inUrl my-2" id="url" type="text" placeholder="url">
+                </div>
+                <div class="col-12">
+                    <label for="name" class="mt-3" style="font-size:14px ;"><b>Video nomini kiriting</b></label>
+                </div>
+                <div class="col-12">
+                    <input class="form-control inTitle my-2" id="name" type="text" placeholder="name">
+                </div>
+                <div class="col-12">
+                    <label for="cat" class="mt-3" style="font-size:14px ;"><b>Video categoriesini kiriting</b></label>
+                </div>
+                <div class="col-12">
+                    <input class="form-control inCat my-2" id="cat" type="text" placeholder="categories">
+                </div>
+                <div class="col-12">
+                    <label for="date" class="mt-3" style="font-size:14px ;"><b>Video vaqtini kiriting</b></label>
+                </div>
+                <div class="col-12">
+                    <input class="form-control inDate my-2" id="date" type="date" placeholder="date">
+                </div>
+                <div style="text-align: center;">
+                    <button style="border: 2px solid;" class="btn btn_submit mt-3"><b>Submit</b></button>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <!--section mobilni nav start-->
+    <div class="container">
+        <div class="row  ">
+            <div class="col-3 my-2 icon">
+                <span class="mx-2"><b>YouTube</b></span><img height="20"
+                    src="YouTube_Music_short_logo_with_white_wordmark.svg.png" alt=""> </div>
+            <div class="col-7 ">
+                <input type="search" placeholder="search" class="form-control search  my-2 py-1 px-3  " height="16px">
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row catigoriya my-2">
+            <div class="col-3" ></div>
+            <div class="col-2 all"><span>All</span></div>
+            <div class="col-2 it"><span>IT</span></div>
+            <div class="col-2 sport"><span>Sport</span></div>
+            <div class="col-2 muzik"><span>Muzik</span></div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row video__lenta my-3"></div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edite</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="url" class="mt-2" style="font-size:14px ;"><b>Video urlini kiriting</b></label>
+                        </div>
+                        <div class="col-12">
+                            <input class="form-control eUrl  my-1" id="url" type="text" placeholder="url">
+                        </div>
+                        <div class="col-12">
+                            <label for="name" class="mt-2" style="font-size:14px ;"><b>Video nomini kiriting</b></label>
+                        </div>
+                        <div class="col-12">
+                            <input class="form-control eTitle  my-1" id="name" type="text" placeholder="name">
+                        </div>
+                        <div class="col-12">
+                            <label for="cat" class="mt-2" style="font-size:14px ;"><b>Video categoriesini
+                                    kiriting</b></label>
+                        </div>
+                        <div class="col-12">
+                            <input class="form-control  eCat   my-1" id="cat" type="text" placeholder="categories">
+                        </div>
+                        <div class="col-12">
+                            <label for="date" class="mt-2" style="font-size:14px ;"><b>Video vaqtini
+                                    kiriting</b></label>
+                        </div>
+                        <div class="col-12">
+                            <input class="form-control eDate my-1" id="date" type="date" placeholder="date">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary edite_btn" data-bs-dismiss="modal">Save
+                            changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+        <script src="jqurey.js"></script>
+        <script src="video.js"></script>
+        <script src="main.js"></script>
+</body>
+
+</html>
